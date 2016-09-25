@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pitch for Shiny Application</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Pitch for Shiny Application">
+  <meta name="author" content="Katherine Broecker">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Pitch for Shiny Application</h1>
+    <h2>Conversion Calculator - Kilobytes</h2>
+    <p>Katherine Broecker<br/>Senior Predictive Analyst</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview of Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The purpose of this project is to demonstrate a working knowledge of shiny apps by creating a simple application and publishing it to the shiny server with RStudio.  For my application I chose to create a conversion calculator that takes the user input of kilobytes and converts it to both megabytes and gigabytes.</p>
+
+<p>The application can be viewed and tested at</p>
+
+<p><a href="https://kbroecker.shinyapps.io/Developing-Data-Products/">https://kbroecker.shinyapps.io/Developing-Data-Products/</a></p>
+
+<p>The R code used to create the shiny application is published in</p>
+
+<p><a href="https://github.com/kbroecker/Developing-Data-Products">https://github.com/kbroecker/Developing-Data-Products</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Conversion Refresher</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Convertering data units is quite simple if one can remember the conversion amounts.  But, do we always remember?</p>
+
+<p>How many Kilobytes in a Megabyte?</p>
+
+<pre><code class="r">kilobyte &lt;- c(99, 233, 5678, 4539879)
+megabyte &lt;- kilobyte/1000
+megabyte
+</code></pre>
+
+<pre><code>## [1]    0.099    0.233    5.678 4539.879
+</code></pre>
+
+<pre><code class="r">gigabyte &lt;- kilobyte/1000000
+gigabyte
+</code></pre>
+
+<pre><code>## [1] 0.000099 0.000233 0.005678 4.539879
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How does the shiny app work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>User enters in a kilobyte value with increments of 1</li>
+<li>The app restates/confirms the user entry amount</li>
+<li>The app outputs the converted value for megabytes and gigabytes</li>
+</ol>
+
+<div style='text-align: center;'>
+  <img src='shiny_app.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This project demonostrates that I have successfully built a simple, yet useful application using RStudio and shiny.  While the math to make the conversion from kilobytes to megabytes and gigabytes is quite simple, remembering the conversion rate may not be.  This app allows the user to quickly and easily calculate the conversion correctly every time.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Overview of Project'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Conversion Refresher'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How does the shiny app work?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Summary'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
